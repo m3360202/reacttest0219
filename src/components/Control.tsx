@@ -29,7 +29,7 @@ export default function Control(): React.JSX.Element {
         const oldList = useTodoList.getState().todoList;
         const newList = oldList.map((item) => {
             if (item.selected) {
-                item.completed = !item.completed;
+                item.completed = true;
             }
             return item;
         });
